@@ -3,15 +3,17 @@ var array = [
     {FirstName: 'Bill', LastName: 'Johnson', Age: 25, Gender: 'Male'},
     ];
 
-array.forEach(function(item, i, array)
+array.forEach(function(item, i)
 {
     var user = new GetUser(
-        array[i].FirstName,
-        array[i].LastName,
-        array[i].Age,
-        array[i].Gender
+        item.FirstName,
+        item.LastName,
+        item.Age,
+        item.Gender
     );
-    console.log("ID: " + [i]
+    console.log
+    (
+        "ID: " + [i]
         + " FirstName: " + user.FirstName
         + " LastName: " + user.LastName
         + " AgeResult: " + user.AgeResult
