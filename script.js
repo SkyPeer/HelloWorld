@@ -1,8 +1,15 @@
-var user = new GetUser(
-    "Ivan",
-    "Ivanov",
-    38,
-    "Male"
-);
-console.log('GetUser:' + user.FirstName, user.LastName, user.AgeResult, user.Gender);
-
+usersarray.forEach(function(item, i) {
+  var user = new GetUserFunction(
+    item.FirstName,
+    item.LastName,
+    item.Age,
+    item.Gender
+  );
+  console.log(
+    "ID: " + [i] + 
+    " FirstName: " + user.FirstName + 
+    " LastName: " + user.LastName + 
+    " AgeResult: " + user.AgeResult + 
+    " Gender: " + user.Gender
+  );
+});
