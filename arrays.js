@@ -10,3 +10,6 @@ task1array =
         {name: "c"},
         {name: "d"}
     ];
+
+task2array =
+    ["a","b","c","d"];
