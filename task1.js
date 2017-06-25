@@ -1,5 +1,9 @@
+let data = require('./arrays');
+
 console.log("Task1");
-task1array.forEach(function(item){
-  var name = item.name + " 1 ";
-  console.log(name)
+
+data.task1array.forEach(function (item, i) {
+    //item.name =  item.name + " 1";
+    item.name += " 1";
 });
+console.log(data.task1array);

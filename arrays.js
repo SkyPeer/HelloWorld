@@ -1,10 +1,11 @@
-var usersarray = 
+let task3array =
 [
+    'd',
     {FirstName: 'Ivanov', LastName: 'Ivan', Age: 14, Gender: 'Male'},
     {FirstName: 'Bill', LastName: 'Johnson', Age: 18, Gender: 'Male'},
     {FirstName: 'Jane', LastName: 'Skally', Age: 25, Gender: 'Female'}
 ];
-task1array =
+let task1array =
     [
         {name: "a"},
         {name: "b"},
@@ -12,7 +13,14 @@ task1array =
         {name: "d"}
     ];
 
-task2array =
-    ["a","b","c","d"];
+let task2array =
+    ["a","b","c","d",{f:2}];
 
-task3array = usersarray;
+//let  = usersarray;
+
+module.exports = {
+    task1array,
+    task2array,
+    task3array,
+
+};

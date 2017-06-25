@@ -1,5 +1,9 @@
-console.log("Task2 part1");
-task2array.forEach(function (item, i) {
+
+let data = require('./arrays');
+
+data.task2array.forEach(function (item, i) {
    item = item + " 1";
-   console.log("i=" + i, "item = " + item);
+    item.test = {'ttt':2};
+   //console.log("i=" + i, "item = " + item);
 });
+console.log(data.task2array);
