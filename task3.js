@@ -7,12 +7,9 @@ var ftask3array = task3array.filter(function (user) {
 });console.log(ftask3array);
 
 
-console.log(" ");
-console.log("map:");
+console.log(" ");console.log("map:");
 rtask3array = ftask3array.map(function(user) {
             var fioarray = {fio: user.FirstName + " " + user.LastName + " " + user.Gender + " ", adult: true};
-       // fio[i] = obj.FirstName + " " + obj.LastName + " " + obj.Gender + " ";
-   // console.log("fio "+ "("+ [i] +")"+ " " + fio);
    console.log(fioarray);
     return fioarray;
 });
