@@ -23,14 +23,11 @@ console.log(" ");
 console.log("FioArray");
 console.log("Array Length= " + rtask3array.length);
 console.log(rtask3array);
-console.log("sample --------------------------------------------");*/
-var fioarray = [];
+
+/* var fioarray = [];
 data.task3array.forEach(item=> {
     item.fio = `f:${item.FirstName} n:${item.LastName} g:${item.Gender}` ;
     item.test = {'ttt':2};
     fioarray = {fio: item.FirstName + " " + item.LastName + " " + item.Gender + " ", adult: true};
     console.log(item);
-
-});
-
-console.log(data.task3array);
+});console.log(data.task3array); */

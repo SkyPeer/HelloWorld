@@ -1,5 +1,5 @@
-usersarray.forEach(function(item, i) {
-  var user = new GetUserFunction(
+task3array.forEach(function(item, i) {
+  let user = new GetUserFunction(
     item.FirstName,
     item.LastName,
     item.Age,
