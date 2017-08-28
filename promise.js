@@ -6,21 +6,14 @@ function PromiseUserFunction(FirstName, LastName, Age, Gender) {
 
 async function asyncUserFunc(FirstName, LastName, Age, Gender) {
         let user = await PromiseUserFunction(FirstName, LastName, Age, Gender);
-        /* console.log("Func PROMISE Result:" ,user); */
         return(user);
     }
-
 
 function log(user) {
     console.log("LogResult:", user)
 }
 
-
 PromiseUserFunction('Jack', 'Daniels', 15, 'M').then(log); /* LogResult: { FirstName: 'Jack', LastName: 'Daniels', AgeResult: 'Young', Gender: 'M' } */
-
-let userpromise = PromiseUserFunction('Jack', 'Daniels', 15, 'M'); log(userpromise); /* LogResult: Promise { <pending> } */
-
 asyncUserFunc("Jack", "Daniels", 15, "M").then(log); /* LogResult: { FirstName: 'Jack', LastName: 'Daniels', AgeResult: 'Young', Gender: 'M' } */
-
+let userpromise = PromiseUserFunction('Jack', 'Daniels', 15, 'M'); log(userpromise); /* LogResult: Promise { <pending> } */
 let asyncuser = asyncUserFunc("Jack", "Daniels", 15, "M"); log(asyncuser); /*LogResult: Promise { <pending> }*/
-

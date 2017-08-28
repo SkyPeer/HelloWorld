@@ -18,6 +18,7 @@ async function test1() {
 async function test2() {
     let text = await getText('hello3');
     return text;
+
 }
 
 //пример с промисом
@@ -28,4 +29,4 @@ test1();
 
 //return из асинхронной функции
 let t = test2();
-log(t);
+log(t); /* << ---- текст: [object Promise], выполняется не должыдаясь async function return text; */
